@@ -43,6 +43,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelNoBloques = new System.Windows.Forms.Label();
             this.botonSalir = new System.Windows.Forms.Button();
+            this.buttonDefecto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLineasBloque)).BeginInit();
@@ -53,18 +54,17 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(562, 62);
+            this.panel1.Size = new System.Drawing.Size(642, 83);
             this.panel1.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(163, 9);
+            this.label3.Location = new System.Drawing.Point(186, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 32);
+            this.label3.Size = new System.Drawing.Size(272, 41);
             this.label3.TabIndex = 0;
             this.label3.Text = "Lector de Archivos";
             // 
@@ -74,36 +74,33 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelPrincipal});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 482);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 646);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(562, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(642, 26);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabelPrincipal
             // 
             this.toolStripStatusLabelPrincipal.Name = "toolStripStatusLabelPrincipal";
-            this.toolStripStatusLabelPrincipal.Size = new System.Drawing.Size(334, 17);
+            this.toolStripStatusLabelPrincipal.Size = new System.Drawing.Size(420, 20);
             this.toolStripStatusLabelPrincipal.Text = "Hecho por: Diana Yulissa Sesma Santiago y Kristan Ruíz Limón";
             // 
             // textBoxPrincipal
             // 
-            this.textBoxPrincipal.Location = new System.Drawing.Point(43, 146);
-            this.textBoxPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPrincipal.Location = new System.Drawing.Point(49, 195);
             this.textBoxPrincipal.Multiline = true;
             this.textBoxPrincipal.Name = "textBoxPrincipal";
             this.textBoxPrincipal.ReadOnly = true;
             this.textBoxPrincipal.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxPrincipal.Size = new System.Drawing.Size(474, 290);
+            this.textBoxPrincipal.Size = new System.Drawing.Size(541, 385);
             this.textBoxPrincipal.TabIndex = 2;
             // 
             // buttonElegirArchivo
             // 
-            this.buttonElegirArchivo.Location = new System.Drawing.Point(12, 74);
-            this.buttonElegirArchivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonElegirArchivo.Location = new System.Drawing.Point(14, 99);
             this.buttonElegirArchivo.Name = "buttonElegirArchivo";
-            this.buttonElegirArchivo.Size = new System.Drawing.Size(114, 27);
+            this.buttonElegirArchivo.Size = new System.Drawing.Size(130, 36);
             this.buttonElegirArchivo.TabIndex = 4;
             this.buttonElegirArchivo.Text = "Eligir Archivo";
             this.buttonElegirArchivo.UseVisualStyleBackColor = true;
@@ -111,10 +108,9 @@
             // 
             // buttonAlternarModo
             // 
-            this.buttonAlternarModo.Location = new System.Drawing.Point(397, 74);
-            this.buttonAlternarModo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAlternarModo.Location = new System.Drawing.Point(454, 99);
             this.buttonAlternarModo.Name = "buttonAlternarModo";
-            this.buttonAlternarModo.Size = new System.Drawing.Size(153, 28);
+            this.buttonAlternarModo.Size = new System.Drawing.Size(175, 37);
             this.buttonAlternarModo.TabIndex = 6;
             this.buttonAlternarModo.Text = "Dividir en bloques";
             this.buttonAlternarModo.UseVisualStyleBackColor = true;
@@ -123,32 +119,31 @@
             // labelArchivoElegido
             // 
             this.labelArchivoElegido.AutoSize = true;
-            this.labelArchivoElegido.Location = new System.Drawing.Point(97, 456);
+            this.labelArchivoElegido.Location = new System.Drawing.Point(111, 608);
             this.labelArchivoElegido.Name = "labelArchivoElegido";
-            this.labelArchivoElegido.Size = new System.Drawing.Size(112, 15);
+            this.labelArchivoElegido.Size = new System.Drawing.Size(143, 20);
             this.labelArchivoElegido.TabIndex = 7;
             this.labelArchivoElegido.Text = "labelArchivoElegido";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(153, 104);
+            this.label2.Location = new System.Drawing.Point(175, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 15);
+            this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "No. Lineas P/bloque";
             // 
             // numericUpDownLineasBloque
             // 
-            this.numericUpDownLineasBloque.Location = new System.Drawing.Point(283, 103);
-            this.numericUpDownLineasBloque.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericUpDownLineasBloque.Location = new System.Drawing.Point(323, 137);
             this.numericUpDownLineasBloque.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDownLineasBloque.Name = "numericUpDownLineasBloque";
-            this.numericUpDownLineasBloque.Size = new System.Drawing.Size(82, 23);
+            this.numericUpDownLineasBloque.Size = new System.Drawing.Size(94, 27);
             this.numericUpDownLineasBloque.TabIndex = 10;
             this.numericUpDownLineasBloque.Value = new decimal(new int[] {
             5,
@@ -168,28 +163,40 @@
             // labelNoBloques
             // 
             this.labelNoBloques.AutoSize = true;
-            this.labelNoBloques.Location = new System.Drawing.Point(260, 456);
+            this.labelNoBloques.Location = new System.Drawing.Point(297, 608);
             this.labelNoBloques.Name = "labelNoBloques";
-            this.labelNoBloques.Size = new System.Drawing.Size(86, 15);
+            this.labelNoBloques.Size = new System.Drawing.Size(105, 20);
             this.labelNoBloques.TabIndex = 14;
             this.labelNoBloques.Text = "labelnoChunks";
             // 
             // botonSalir
             // 
-            this.botonSalir.Location = new System.Drawing.Point(430, 452);
+            this.botonSalir.Location = new System.Drawing.Point(491, 603);
+            this.botonSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botonSalir.Name = "botonSalir";
-            this.botonSalir.Size = new System.Drawing.Size(75, 23);
+            this.botonSalir.Size = new System.Drawing.Size(86, 31);
             this.botonSalir.TabIndex = 15;
             this.botonSalir.Text = "Salir";
             this.botonSalir.UseVisualStyleBackColor = true;
             this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
             // 
+            // buttonDefecto
+            // 
+            this.buttonDefecto.Location = new System.Drawing.Point(206, 89);
+            this.buttonDefecto.Name = "buttonDefecto";
+            this.buttonDefecto.Size = new System.Drawing.Size(211, 29);
+            this.buttonDefecto.TabIndex = 16;
+            this.buttonDefecto.Text = "Seleccionar lineas.txt";
+            this.buttonDefecto.UseVisualStyleBackColor = true;
+            this.buttonDefecto.Click += new System.EventHandler(this.buttonDefecto_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(562, 504);
+            this.ClientSize = new System.Drawing.Size(642, 672);
+            this.Controls.Add(this.buttonDefecto);
             this.Controls.Add(this.botonSalir);
             this.Controls.Add(this.labelNoBloques);
             this.Controls.Add(this.label2);
@@ -200,7 +207,6 @@
             this.Controls.Add(this.textBoxPrincipal);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Archivos De Texto";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -230,5 +236,6 @@
         private System.Windows.Forms.Timer timer1;
         private Label labelNoBloques;
         private Button botonSalir;
+        private Button buttonDefecto;
     }
 }

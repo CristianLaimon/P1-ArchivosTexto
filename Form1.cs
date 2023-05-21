@@ -82,5 +82,18 @@ namespace Practica_1_ArchivoTexto
         {
             Application.Exit();
         }
+
+        private void buttonDefecto_Click(object sender, EventArgs e)
+        {
+            if (flujo == null)
+            {
+                flujo = new FileStream("./recursos/lineas.txt", FileMode.Open, FileAccess.Read);
+                lector = new StreamReader(flujo);
+            }
+            textBoxPrincipal.Text = lector.ReadToEnd();
+            labelArchivoElegido.Text = "lineas.txt";
+            toolStripStatusLabelPrincipal.Text = Path.GetFullPath("./recursos/lineas.txt");
+            buttonAlternarModo.Enabled = true;
+        }
     }
 }
