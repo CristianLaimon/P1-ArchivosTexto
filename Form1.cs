@@ -1,3 +1,4 @@
+using System.Configuration;
 using System.Text;
 
 namespace Practica_1_ArchivoTexto
@@ -6,7 +7,6 @@ namespace Practica_1_ArchivoTexto
     {
         private FileStream flujo;
         private StreamReader lector;
-        //private StreamWriter escritor;
         private StringBuilder texto;
 
         public Form1()
@@ -19,7 +19,8 @@ namespace Practica_1_ArchivoTexto
             flujo.Seek(0, SeekOrigin.Begin);
             texto = new();
             textBoxPrincipal.Text = "";
-            byte contador = 0;
+            byte contador = 0, contadorBloques = 0;
+            
 
             while (!lector.EndOfStream)
             {
@@ -31,11 +32,14 @@ namespace Practica_1_ArchivoTexto
                 else
                 {
                     textBoxPrincipal.Text += texto.ToString();
-                    textBoxPrincipal.Text += "\n\r+++++++++++++++++++++++++++++++\n\r\r\n\r\n";
+                    textBoxPrincipal.Text += "\n\r++++++++++\n\r\r\n\r\n";
                     texto.Clear();
                     contador = 0;
+                    contadorBloques++;
                 }
             }
+
+            labelNoBloques.Text = "Numero de Bloques: " + " " + contadorBloques.ToString();
         }
 
         private void buttonElegirArchivo_Click(object sender, EventArgs e)
@@ -48,9 +52,8 @@ namespace Practica_1_ArchivoTexto
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                flujo = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.ReadWrite);
+                flujo = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read);
                 lector = new StreamReader(flujo);
-                //escritor = new StreamWriter(flujo);
                 textBoxPrincipal.Text = lector.ReadToEnd();
                 labelArchivoElegido.Text = Path.GetFileName(openFileDialog.FileName);
                 toolStripStatusLabelPrincipal.Text = openFileDialog.FileName;
@@ -63,6 +66,7 @@ namespace Practica_1_ArchivoTexto
         {
             openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt";
             labelArchivoElegido.Text = "Ningún archivo elegido";
+            labelNoBloques.Text = "Numero de Bloques: 0";
             buttonAlternarModo.Enabled = false;
         }
 
@@ -73,5 +77,10 @@ namespace Practica_1_ArchivoTexto
         }
 
         private void ToggleTimer() => timer1.Enabled = !timer1.Enabled;
+
+        private void botonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
