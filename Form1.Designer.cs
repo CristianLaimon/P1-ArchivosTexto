@@ -44,6 +44,7 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labelNoBloques = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLineasBloque)).BeginInit();
@@ -177,11 +178,21 @@
             this.timer1.Interval = 8000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // labelNoBloques
+            // 
+            this.labelNoBloques.AutoSize = true;
+            this.labelNoBloques.Location = new System.Drawing.Point(229, 608);
+            this.labelNoBloques.Name = "labelNoBloques";
+            this.labelNoBloques.Size = new System.Drawing.Size(50, 20);
+            this.labelNoBloques.TabIndex = 14;
+            this.labelNoBloques.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 672);
+            this.Controls.Add(this.labelNoBloques);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -223,5 +234,6 @@
         private OpenFileDialog openFileDialog;
         private BindingSource bindingSource1;
         private System.Windows.Forms.Timer timer1;
+        private Label labelNoBloques;
     }
 }
