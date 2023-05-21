@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -44,10 +45,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,6 +94,7 @@
             this.textBoxPrincipal.Location = new System.Drawing.Point(77, 197);
             this.textBoxPrincipal.Multiline = true;
             this.textBoxPrincipal.Name = "textBoxPrincipal";
+            this.textBoxPrincipal.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxPrincipal.Size = new System.Drawing.Size(541, 386);
             this.textBoxPrincipal.TabIndex = 2;
             // 
@@ -100,7 +104,7 @@
             this.buttonElegirArchivo.Name = "buttonElegirArchivo";
             this.buttonElegirArchivo.Size = new System.Drawing.Size(130, 36);
             this.buttonElegirArchivo.TabIndex = 4;
-            this.buttonElegirArchivo.Text = "Elegir archivo...";
+            this.buttonElegirArchivo.Text = "Eligiendo...";
             this.buttonElegirArchivo.UseVisualStyleBackColor = true;
             this.buttonElegirArchivo.Click += new System.EventHandler(this.buttonElegirArchivo_Click);
             // 
@@ -212,6 +216,7 @@
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,5 +240,6 @@
         private Button button1;
         private Button button2;
         private OpenFileDialog openFileDialog;
+        private BindingSource bindingSource1;
     }
 }
