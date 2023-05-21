@@ -14,6 +14,16 @@ namespace Practica_1_ArchivoTexto
             InitializeComponent();
         }
 
+        private void botonSalir_Click(object sender, EventArgs e)
+        {
+            if (flujo != null)
+            {
+                flujo.Close();
+                lector.Close();
+            }
+            Application.Exit();
+        }
+
         private void buttonAlternarModo_Click(object sender, EventArgs e)
         {
             flujo.Seek(0, SeekOrigin.Begin);
@@ -70,6 +80,7 @@ namespace Practica_1_ArchivoTexto
             labelNoBloques.Text = "Numero de Bloques: 0";
             buttonAlternarModo.Enabled = false;
             openFileDialog.InitialDirectory = Path.GetFullPath("./recursos");
+            this.MaximizeBox = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -79,29 +90,5 @@ namespace Practica_1_ArchivoTexto
         }
 
         private void ToggleTimer() => timer1.Enabled = !timer1.Enabled;
-
-        private void botonSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-            flujo.Close();
-            lector.Close();
-        }
-
-        private void buttonDefecto_Click(object sender, EventArgs e)
-        {
-            if (flujo != null)
-            {
-                flujo.Close();
-                lector.Close();
-            }
-
-            flujo = new FileStream("./recursos/lineas.txt", FileMode.Open, FileAccess.Read);
-            lector = new StreamReader(flujo);
-            flujo.Seek(0, SeekOrigin.Begin);
-            textBoxPrincipal.Text = lector.ReadToEnd();
-            labelArchivoElegido.Text = "lineas.txt";
-            toolStripStatusLabelPrincipal.Text = Path.GetFullPath("./recursos/lineas.txt");
-            buttonAlternarModo.Enabled = true;
-        }
     }
 }

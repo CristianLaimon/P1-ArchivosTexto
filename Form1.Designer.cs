@@ -43,7 +43,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelNoBloques = new System.Windows.Forms.Label();
             this.botonSalir = new System.Windows.Forms.Button();
-            this.buttonDefecto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLineasBloque)).BeginInit();
@@ -180,23 +179,12 @@
             this.botonSalir.UseVisualStyleBackColor = true;
             this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
             // 
-            // buttonDefecto
-            // 
-            this.buttonDefecto.Location = new System.Drawing.Point(262, 97);
-            this.buttonDefecto.Name = "buttonDefecto";
-            this.buttonDefecto.Size = new System.Drawing.Size(211, 29);
-            this.buttonDefecto.TabIndex = 16;
-            this.buttonDefecto.Text = "Seleccionar lineas.txt";
-            this.buttonDefecto.UseVisualStyleBackColor = true;
-            this.buttonDefecto.Click += new System.EventHandler(this.buttonDefecto_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(749, 689);
-            this.Controls.Add(this.buttonDefecto);
             this.Controls.Add(this.botonSalir);
             this.Controls.Add(this.labelNoBloques);
             this.Controls.Add(this.label2);
@@ -207,6 +195,8 @@
             this.Controls.Add(this.textBoxPrincipal);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(767, 736);
+            this.MinimumSize = new System.Drawing.Size(767, 736);
             this.Name = "Form1";
             this.Text = "Archivos De Texto";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -236,6 +226,5 @@
         private System.Windows.Forms.Timer timer1;
         private Label labelNoBloques;
         private Button botonSalir;
-        private Button buttonDefecto;
     }
 }
