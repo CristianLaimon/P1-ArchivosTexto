@@ -54,6 +54,7 @@ namespace Practica_1_ArchivoTexto
             {
                 flujo = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read);
                 lector = new StreamReader(flujo);
+
                 textBoxPrincipal.Text = lector.ReadToEnd();
                 labelArchivoElegido.Text = Path.GetFileName(openFileDialog.FileName);
                 toolStripStatusLabelPrincipal.Text = openFileDialog.FileName;
@@ -68,6 +69,7 @@ namespace Practica_1_ArchivoTexto
             labelArchivoElegido.Text = "Ningún archivo elegido";
             labelNoBloques.Text = "Numero de Bloques: 0";
             buttonAlternarModo.Enabled = false;
+            openFileDialog.InitialDirectory = Path.GetFullPath("./recursos");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -81,15 +83,21 @@ namespace Practica_1_ArchivoTexto
         private void botonSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            flujo.Close();
+            lector.Close();
         }
 
         private void buttonDefecto_Click(object sender, EventArgs e)
         {
-            if (flujo == null)
+            if (flujo != null)
             {
-                flujo = new FileStream("./recursos/lineas.txt", FileMode.Open, FileAccess.Read);
-                lector = new StreamReader(flujo);
+                flujo.Close();
+                lector.Close();
             }
+
+            flujo = new FileStream("./recursos/lineas.txt", FileMode.Open, FileAccess.Read);
+            lector = new StreamReader(flujo);
+            flujo.Seek(0, SeekOrigin.Begin);
             textBoxPrincipal.Text = lector.ReadToEnd();
             labelArchivoElegido.Text = "lineas.txt";
             toolStripStatusLabelPrincipal.Text = Path.GetFullPath("./recursos/lineas.txt");

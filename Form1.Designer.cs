@@ -55,14 +55,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 83);
+            this.panel1.Size = new System.Drawing.Size(749, 83);
             this.panel1.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(186, 12);
+            this.label3.Location = new System.Drawing.Point(232, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(272, 41);
             this.label3.TabIndex = 0;
@@ -74,9 +74,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelPrincipal});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 646);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 663);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(642, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(749, 26);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -88,17 +88,17 @@
             // 
             // textBoxPrincipal
             // 
-            this.textBoxPrincipal.Location = new System.Drawing.Point(49, 195);
+            this.textBoxPrincipal.Location = new System.Drawing.Point(38, 184);
             this.textBoxPrincipal.Multiline = true;
             this.textBoxPrincipal.Name = "textBoxPrincipal";
             this.textBoxPrincipal.ReadOnly = true;
             this.textBoxPrincipal.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxPrincipal.Size = new System.Drawing.Size(541, 385);
+            this.textBoxPrincipal.Size = new System.Drawing.Size(656, 385);
             this.textBoxPrincipal.TabIndex = 2;
             // 
             // buttonElegirArchivo
             // 
-            this.buttonElegirArchivo.Location = new System.Drawing.Point(14, 99);
+            this.buttonElegirArchivo.Location = new System.Drawing.Point(70, 107);
             this.buttonElegirArchivo.Name = "buttonElegirArchivo";
             this.buttonElegirArchivo.Size = new System.Drawing.Size(130, 36);
             this.buttonElegirArchivo.TabIndex = 4;
@@ -108,7 +108,7 @@
             // 
             // buttonAlternarModo
             // 
-            this.buttonAlternarModo.Location = new System.Drawing.Point(454, 99);
+            this.buttonAlternarModo.Location = new System.Drawing.Point(510, 107);
             this.buttonAlternarModo.Name = "buttonAlternarModo";
             this.buttonAlternarModo.Size = new System.Drawing.Size(175, 37);
             this.buttonAlternarModo.TabIndex = 6;
@@ -119,7 +119,7 @@
             // labelArchivoElegido
             // 
             this.labelArchivoElegido.AutoSize = true;
-            this.labelArchivoElegido.Location = new System.Drawing.Point(111, 608);
+            this.labelArchivoElegido.Location = new System.Drawing.Point(128, 604);
             this.labelArchivoElegido.Name = "labelArchivoElegido";
             this.labelArchivoElegido.Size = new System.Drawing.Size(143, 20);
             this.labelArchivoElegido.TabIndex = 7;
@@ -128,7 +128,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(175, 139);
+            this.label2.Location = new System.Drawing.Point(231, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 11;
@@ -136,7 +136,7 @@
             // 
             // numericUpDownLineasBloque
             // 
-            this.numericUpDownLineasBloque.Location = new System.Drawing.Point(323, 137);
+            this.numericUpDownLineasBloque.Location = new System.Drawing.Point(379, 145);
             this.numericUpDownLineasBloque.Minimum = new decimal(new int[] {
             1,
             0,
@@ -163,7 +163,7 @@
             // labelNoBloques
             // 
             this.labelNoBloques.AutoSize = true;
-            this.labelNoBloques.Location = new System.Drawing.Point(297, 608);
+            this.labelNoBloques.Location = new System.Drawing.Point(321, 604);
             this.labelNoBloques.Name = "labelNoBloques";
             this.labelNoBloques.Size = new System.Drawing.Size(105, 20);
             this.labelNoBloques.TabIndex = 14;
@@ -171,7 +171,7 @@
             // 
             // botonSalir
             // 
-            this.botonSalir.Location = new System.Drawing.Point(491, 603);
+            this.botonSalir.Location = new System.Drawing.Point(508, 599);
             this.botonSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botonSalir.Name = "botonSalir";
             this.botonSalir.Size = new System.Drawing.Size(86, 31);
@@ -182,7 +182,7 @@
             // 
             // buttonDefecto
             // 
-            this.buttonDefecto.Location = new System.Drawing.Point(206, 89);
+            this.buttonDefecto.Location = new System.Drawing.Point(262, 97);
             this.buttonDefecto.Name = "buttonDefecto";
             this.buttonDefecto.Size = new System.Drawing.Size(211, 29);
             this.buttonDefecto.TabIndex = 16;
@@ -195,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(642, 672);
+            this.ClientSize = new System.Drawing.Size(749, 689);
             this.Controls.Add(this.buttonDefecto);
             this.Controls.Add(this.botonSalir);
             this.Controls.Add(this.labelNoBloques);
