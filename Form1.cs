@@ -10,6 +10,12 @@ namespace Practica_1_ArchivoTexto
         private void Form1_Load(object sender, EventArgs e)
         {
             numericUpDown1.Controls[0].Visible = false;
+            OpenFileDialog openFileDialog = new();
+        }
+
+        private void buttonElegirArchivo_Click(object sender, EventArgs e)
+        {
+            openFileDialog.ShowDialog();
         }
     }
 }
